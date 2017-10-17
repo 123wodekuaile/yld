@@ -1,0 +1,206 @@
+//适配
+@import "adapter.less";
+
+//重置
+@import "base.less";
+
+//字体图标
+@import "font.less";
+
+//頭部
+@import "common.less";
+
+//order_address部分start
+.order_address {
+  height: 146 / 36rem;
+  background-color: #fff;
+  padding-left: 77 / 36rem;
+  padding-top: 24 / 36rem;
+  padding-right: 88 / 36rem;
+  position: relative;
+  font-size: 30 /36rem;
+  color: #000;
+  border-bottom: 3px solid #3ED765;
+  margin-bottom: 25 / 36rem;
+  .icon_address {
+    position: absolute;
+    left: 30 / 36rem;
+    top: 69 / 36rem;
+    width: 29 / 36rem;
+    height: 35 / 36rem;
+    background: url(../images/sprites.png) -171/ 36rem  -25 /36rem no-repeat;
+    background-size: 877 / 36rem;
+  }
+  .address_detail {
+    margin-top:20 / 36rem;
+    font-size: 26 /36rem;
+    color: #929292;
+  }
+}
+.order_main {
+  width: 100%;
+  border-top: 1px solid #E6E6E6;
+  border-bottom: 1px solid #E6E6E6;
+  margin-top: 25 / 36rem;
+  margin-bottom: 25 / 36rem;
+  .order_info {
+    padding-left: 30 / 36rem;
+    background-color: #fff;
+    .info_water {
+      width: 690 / 36rem;
+      height: 78 / 36rem;
+      background-color: #fff;
+      border-bottom: 1px solid #E6E6E6;
+      font-size: 24 / 36rem;
+      color: #fff;
+      span {
+        display: block;
+        float: left;
+        &.green {
+          width: 162 / 36rem;
+          height: 46 / 36rem;
+          background-color: #42D666;
+          border-radius: 2px;
+          text-align: center;
+          line-height: 46 / 36rem;
+          margin-top: 16 / 36rem;
+          margin-right: 34 / 36rem;
+        }
+        &.number {
+          color: #000;
+          margin-top: 25 / 36rem;
+        }
+      }
+    }
+    .info_send {
+      width: 690 / 36rem ;
+      height: 60 / 36rem;
+      border-bottom: 1px solid #E6E6E6;
+      line-height: 50 / 36rem;
+      .send {
+        font-size: 30 / 36rem;
+        color: #000;
+        margin-right: 64 / 36rem;
+      }
+      .orderNumber, .number {
+        font-size: 26 / 36rem;
+        color: #979797;
+      }
+    }
+    .info_type {
+      width: 690 / 36rem;
+      height: 181 / 36rem;
+      border-bottom: 1px solid #E6E6E6;
+      position: relative;
+      img {
+        width: 150 / 36rem;
+        height: 100%;
+      }
+      .type_desc {
+        font-size: 26 / 36rem;
+        color: #4F4F4F;
+        margin-left: 38 / 36rem;
+        p {
+          margin-top: 18 / 36rem;
+        }
+        .name {
+          float: ;
+          font-size: 30 / 36rem;
+          color: #000;
+          span {
+            position: absolute;
+            top: 30 / 36rem;
+            right: 30 / 36rem;
+            color: #929292;
+            font-size : 26 / 36rem;
+          }
+        }
+        .ntd {
+          width: 30 / 36rem;
+          display: inline-block;
+        }
+        .price {
+          color: #38A9EF;
+          font-size: 26/ 36rem;
+          font-weight: 600;
+        }
+      }
+    }
+    .info_express {
+      height: 80 / 36rem;
+      font-size: 26 / 36rem;
+      line-height: 80 / 36rem;
+      border-bottom: 1px solid #E6E6E6;
+      padding-right: 30 / 36rem;
+      .ntd {
+        width: 30 / 36rem;
+        display: inline-block;
+      }
+      .price {
+        color: #38A9EF;
+        font-size: 26/ 36rem;
+        font-weight: 600;
+      }
+      .subtotal {
+        margin-left: 10 / 36rem;
+      }
+    }
+    .order_invoice {
+      width: 690 / 36rem;
+      height: 94 / 36rem;
+      font-size: 26 / 36rem;
+      color: #9E9E9E;
+      padding-top: 18 /36rem;
+      .invoice_info {
+        margin-bottom: 10 /36rem;
+      }
+      .number {
+        margin-left: 45 /36rem;
+      }
+      .invoice_person {
+        color: #000;
+      }
+    }
+  }
+}
+.order_pay {
+  padding: 0 30 / 36rem;
+  background-color: #fff;
+  font-size : 30 / 36rem;
+  position: relative;
+  height: 129 / 36rem;
+  p {
+    line-height: 65 / 36rem;
+  }
+  img {
+    width: 30 / 36rem;
+    display: inline-block;
+    margin-bottom: 1px;
+  }
+  .money {
+    color: #38A9EF;
+    font-size: 30/ 36rem;
+    font-weight: 600;
+  }
+  .cancel,.pay {
+    width: 150 / 36rem;
+    height: 68 / 36rem;
+    border-radius: 8 / 36rem;
+    font-size: 30 / 36rem;
+    text-align: center;
+    line-height: 68 / 36rem;
+    position: absolute;
+    top : 39 / 36rem;
+  }
+  .cancel {
+    border: 1px solid #45D46B;
+    background-color: #fff;
+    right: 200 / 36rem;
+    color: #45D46B;
+  }
+  .pay {
+    background-color: #45D46B;
+    color: #fff;
+    right: 39 / 36rem;
+  }
+}

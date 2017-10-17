@@ -1,0 +1,181 @@
+//适配
+@import "adapter.less";
+
+//重置
+@import "base.less";
+
+//字体图标
+@import "font.less";
+
+//頭部
+@import "common.less";
+
+//order_address部分start
+.order_address {
+  height: 146 / 36rem;
+  background-color: #fff;
+  padding-left: 77 / 36rem;
+  padding-top: 24 / 36rem;
+  padding-right: 88 / 36rem;
+  position: relative;
+  font-size: 30 /36rem;
+  color: #000;
+  border-bottom: 3px solid #3ED765;
+  margin-bottom: 25 / 36rem;
+  .icon_address {
+    position: absolute;
+    left: 30 / 36rem;
+    top: 69 / 36rem;
+    width: 29 / 36rem;
+    height: 35 / 36rem;
+    background: url(../images/sprites.png) -171/ 36rem  -25 /36rem no-repeat;
+    background-size: 877 / 36rem;
+  }
+  .address_detail {
+    margin-top:20 / 36rem;
+    font-size: 26 /36rem;
+    color: #929292;
+  }
+}
+//order_address部分end
+
+
+//order_main部分start
+.order_main {
+  width: 100%;
+  border-top: 1px solid #E6E6E6;
+  .order_info {
+    padding-left: 30 / 36rem;
+    background-color: #fff;
+    .info_send {
+      width: 690 / 36rem ;
+      height: 60 / 36rem;
+      border-bottom: 1px solid #E6E6E6;
+      line-height: 50 / 36rem;
+      .send {
+        font-size: 30 / 36rem;
+        color: #000;
+        margin-right: 64 / 36rem;
+      }
+      .orderNumber, .number {
+        font-size: 26 / 36rem;
+        color: #979797;
+      }
+    }
+    .info_type {
+      width: 690 / 36rem;
+      height: 181 / 36rem;
+      border-bottom: 1px solid #E6E6E6;
+      position: relative;
+      img {
+        width: 150 / 36rem;
+        height: 100%;
+      }
+      .type_desc {
+        font-size: 26 / 36rem;
+        color: #4F4F4F;
+        margin-left: 38 / 36rem;
+        p {
+          margin-top: 18 / 36rem;
+        }
+        .name {
+          font-size: 30 / 36rem;
+          color: #000;
+          span {
+            position: absolute;
+            top: 30 / 36rem;
+            right: 30 / 36rem;
+            color: #929292;
+            font-size : 26 / 36rem;
+          }
+        }
+      }
+      .ntd {
+        width: 30 / 36rem;
+        display: inline-block;
+      }
+      .price {
+        color: #38A9EF;
+        font-size: 26/ 36rem;
+        font-weight: 600;
+      }
+    }
+    .info_express {
+      height: 80 / 36rem;
+      font-size: 26 / 36rem;
+      line-height: 80 / 36rem;
+      border-bottom: 1px solid #E6E6E6;
+      padding-right: 30 / 36rem;
+      .ntd {
+        width: 30 / 36rem;
+        display: inline-block;
+      }
+      .price {
+        color: #38A9EF;
+        font-size: 26/ 36rem;
+        font-weight: 600;
+      }
+      .subtotal {
+        margin-left: 10 / 36rem;
+      }
+    }
+  }
+}
+//order_main部分end
+
+
+//order_total部分start
+.order_total {
+  padding-left: 30 / 36rem;
+  background-color: #fff;
+  .order_invoice {
+    width: 690 / 36rem;
+    height: 94 / 36rem;
+    border-bottom: 1px solid #E6E6E6;
+    font-size: 26 / 36rem;
+    color: #9E9E9E;
+    padding-top: 18 /36rem;
+    .invoice_info {
+      margin-bottom: 10 /36rem;
+    }
+    .number {
+      margin-left: 45 /36rem;
+    }
+    .invoice_person {
+      color: #000;
+    }
+  }
+  .order_money,.order_deal {
+    width: 690 / 36rem;
+    height: 178 / 36rem;
+    border-bottom: 1px solid #E6E6E6;
+    font-size: 26 / 36rem;
+    color: #9E9E9E;
+    p {
+      margin-top: 23 /36rem;
+      span {
+        color: #000;
+      }
+    }
+    .ntd {
+      width: 30 / 36rem;
+      display: inline-block;
+    }
+    .price {
+      color: #38A9EF;
+      font-size: 26/ 36rem;
+      font-weight: 600;
+    }
+  }
+  .order_deal {
+    height: 228 / 36rem;
+  }
+
+
+
+}
+
+
+//order_total部分end
+
+

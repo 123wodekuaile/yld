@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="../components/swipers/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="../public/css/detail.css">
+</head>
+<body>
+<div class="header">
+    <a href="javascript:history.back(-1);" class="icon1"></a>
+    <span>規格類型</span>
+</div>
+<div class="detail_image">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src=""></div>
+            <div class="swiper-slide"><img src=""></div>
+            <div class="swiper-slide"><img src=""></div>
+            <div class="swiper-slide"><img src=""></div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+<div class="detail_goods">
+    <p>售<s></s>價 :
+        <img src="../public/images/ntd.png" alt="">
+        <span class="price">656-1120</span>
+    </p>
+    <p>商品规格:<span class="spec">2粒每日</span></p>
+    <p>商品編碼 :<span class="code">25025202</span></p>
+</div>
+<div class="detail_spec">
+
+</div>
+<div class="detail_buy">
+    <span class="mount">購買數量</span>
+    <div class="number">
+        <span class="less">-</span>
+        <input type="text" value="1">
+        <span class="add">+</span>
+    </div>
+</div>
+<div class="footer">
+    <div class="left">
+        <span>加入購物車</span>
+    </div>
+    <div class="right">
+        <span>立即購買</span>
+    </div>
+</div>
+</body>
+<script src="../components/jquery/jquery-1.11.1.js"></script>
+<script src="../components/swipers/swiper-3.4.2.min.js"></script>
+<script src="../script/detail.js"></script>
+<script>
+    var mySwiper = new Swiper('.swiper-container', {
+        direction: 'horizontal',
+        loop: 'true',
+        pagination: '.swiper-pagination',
+        autoplay: 3000,
+        autoplayDisableOnInteraction : false,
+        // 如果需要前进后退按钮
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev'
+    });
+</script>
+</html>

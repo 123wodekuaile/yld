@@ -1,0 +1,234 @@
+@charset "utf-8";
+@media only screen and (min-width: 320px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 360px) {
+  html {
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 375px) {
+  html {
+    font-size: 18.75px;
+  }
+}
+@media only screen and (min-width: 400px) {
+  html {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 411px) {
+  html {
+    font-size: 20.55px;
+  }
+}
+@media only screen and (min-width: 414px) {
+  html {
+    font-size: 20.7px;
+  }
+}
+@media only screen and (min-width: 640px) {
+  html {
+    font-size: 30px;
+  }
+}
+/* 禁用iPhone中Safari的字号自动调整 */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+/* 去除iPhone中默认的input样式 */
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+input,
+button {
+  -webkit-appearance: none;
+  resize: none;
+  outline: none;
+}
+/* 取消链接高亮  */
+body,
+div,
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea,
+select,
+p,
+dl,
+dt,
+dd,
+a,
+img,
+button,
+form,
+table,
+th,
+tr,
+td,
+tbody,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  -webkit-tap-highlight-color: transparent;
+}
+/* 图片自适应 */
+img {
+  display: block;
+  width: 100%;
+  border: none;
+}
+/* 初始化 */
+body,
+div,
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea,
+select,
+p,
+dl,
+dt,
+dd,
+a,
+img,
+button,
+form,
+table,
+th,
+tr,
+td,
+tbody,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+body {
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: auto;
+  font-family: "Microsoft YaHei", Arial, "Helvetica";
+  background: #f2f2f2;
+  color: #333;
+  font-size: 1.2rem;
+}
+em,
+i {
+  font-style: normal;
+}
+strong {
+  font-weight: normal;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  visibility: hidden;
+  height: 0;
+  clear: both;
+}
+.clearfix {
+  zoom: 1;
+}
+a {
+  text-decoration: none;
+  color: #444;
+  font-family: Microsoft YaHei, sans-serif;
+}
+a:hover {
+  text-decoration: none;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-family: Microsoft YaHei;
+}
+img {
+  border: none;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.w {
+  width: 100%;
+  overflow: hidden;
+}
+.header {
+  width: 100%;
+  height: 2.66666667rem;
+  background-color: #38ADFA;
+  text-align: center;
+  font-size: 1.05555556rem;
+  line-height: 2.66666667rem;
+  color: #fff;
+  border-bottom: 1px solid #A2A6A7;
+  position: relative;
+}
+.header .icon1 {
+  position: absolute;
+  left: 0.83333333rem;
+  top: 1rem;
+  width: 0.38888889rem;
+  height: 0.69444444rem;
+  background: url(../images/sprites.png) -4.38888889rem -0.69444444rem no-repeat;
+  background-size: 24.36111111rem;
+}
+.empty {
+  color: #767779;
+  font-size: 0.83333333rem;
+}
+.empty .icon {
+  margin: 0 auto;
+  margin-top: 5.02777778rem;
+  width: 5rem;
+  height: 5rem;
+  background: url(../images/sprites.png) -0.41666667rem -6.5rem no-repeat;
+  background-size: 24.36111111rem;
+}

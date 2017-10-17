@@ -1,0 +1,20 @@
+{
+  "name": "yld",
+  "version": "1.0.0",
+  "description": "\"\"\u001b[yld-mall",
+  "main": "index.js",
+  "dependencies": {
+    "webpack": "^3.7.1"
+  },
+  "devDependencies": {
+    "webpack": "^1.15.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mall"
+  ],
+  "author": "cn",
+  "license": "ISC"
+}

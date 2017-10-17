@@ -1,0 +1,252 @@
+  //适配
+  @import "adapter.less";
+
+  //重置
+  @import "base.less";
+
+  //字体图标
+  @import "font.less";
+
+  //頭部
+  @import "common.less";
+
+  .iconfont{
+    font-family: iconfont;
+  }
+  .container {
+    width: 100%;
+    background-color: #F4F7FC;
+  }
+  //header部分start
+
+  .icon2 {
+    position: absolute;
+    right: 30 / 36rem;
+    top: 36 / 36rem;
+    width: 25 / 36rem;
+    height: 25 / 36rem;
+    background: url(../images/sprites.png)  -158/36rem 0 no-repeat;
+    background-size: 877 / 36rem;
+  }
+
+  //header部分end
+  .lunbo {
+    position: relative;
+    width: 100%;
+    height: 298 / 36rem;
+    img {
+      height: 100%;
+    }
+  }
+  .swiper-pagination {
+    top: 390 / 36rem;
+    left: 50%;
+    transform: translateX(-50%);
+    .swiper-pagination-bullet {
+      margin: 0 9 / 36rem;
+    }
+    .swiper-pagination-bullet-active {
+      background:#535353;
+    }
+  }
+
+
+  //search部分开始
+  .search {
+    width: 100%;
+    height: 78 / 36rem;
+    background-color: #fff;
+    border-top: 1px solid #CDCDCB;
+    border-bottom: 1px solid #CDCDCD;
+    position: relative;
+    font-size: 24 / 36rem;
+    margin-top: 56 / 36rem;
+    input {
+      float: left;
+      width: 255 / 36rem;
+      height: 47 / 36rem;
+      border: 1 / 36rem solid #ccc;
+      margin-left: 30 / 36rem;
+      margin-top: 15 / 36rem;
+      box-sizing: border-box;
+      border-radius: 6/36rem 0 0 6 / 36rem;
+    }
+    .search_glass {
+      float: left;
+      width: 49 / 36rem;
+      height: 47 / 36rem;
+      margin-top: 15 / 36rem;
+      background:url(../images/glass_r2_c2.jpg) no-repeat;
+      background-size: 49 / 36rem;
+    }
+    .icon_car {
+      position: absolute;
+      left: 373 / 36rem;
+      top: 23 / 36rem;
+      width: 33 / 36rem;
+      height: 33 / 36rem;
+      background: url(../images/sprites.png) -210/36rem  0  no-repeat;
+      background-size: 877 / 36rem;
+    }
+    .icon_person {
+      position: absolute;
+      right: 148 / 36rem;
+      top: 23 / 36rem;
+      width: 28 / 36rem;
+      height: 33 / 36rem;
+      background: url(../images/sprites.png) -244/36rem  0 no-repeat;
+      background-size: 877 / 36rem;
+    }
+    .car {
+      position: absolute;
+      left: 427 / 36rem;
+      top: 23 / 36rem;
+    }
+    .person {
+      position: absolute;
+      right: 30 /36rem;
+      top: 23 / 36rem;
+    }
+  }
+
+  //search部分end
+    .banner {
+      display: block;
+      width: 100%;
+      height: 238 / 36rem;
+      border-top: 1px solid #CDCDCD;
+      border-bottom: 1px solid #CDCDCD;
+      margin-top: 25 / 36rem;
+      margin-bottom: 25 / 36rem;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+  //item部分start
+  .item {
+    width: 100%;
+  }
+    .toggle {
+      background-color: #fff;
+      height: 67/ 36rem;
+      width:100%;
+      position: relative;
+      overflow: hidden;
+      font-size: 30 / 36rem;
+      border-top: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+      a {
+        color: inherit;
+        display: block;
+        height: 59 / 36rem;
+        width:100%;
+      }
+      .active {
+        color: #4BD46A;
+        border-bottom: 9/36rem solid #4BD46A;
+      }
+      .swiper-slide {
+        text-align: center;
+        line-height: 66 / 36rem;
+      }
+      .swiper-slide:nth-child(1) {
+        width: 23.5%;
+      }
+      .swiper-slide:nth-child(3) {
+        width: 44.5%
+      }
+      .swiper-slide:nth-child(5) {
+        width: 31.4%;
+      }
+      .swiper-slide:nth-child(7) {
+        width: 31.4%;
+      }
+      .swiper-slide:nth-child(9) {
+        width: 31.4%;
+      }
+      .line {
+        width: 0.5%;
+        height: 49 / 36rem;
+        background-color: #ccc;
+        margin-top: 10 / 36rem;
+      }
+    }
+    //product部分start
+  .pro {
+    padding-left : 8 /36rem;
+    margin-top: 25 / 36rem;
+    .product {
+      width: 318 / 36rem;
+      height: 454 / 36rem;
+      border: 1px solid #D1D3D0;
+      border-radius: 3px;
+      background-color: #fff;
+      position: relative;
+      float: left;
+      margin-left: 21 / 36rem;
+      margin-bottom: 25 / 36rem;
+      .product_img {
+        width:150 / 36rem;
+        height: 150 / 36rem;
+        margin: 0 auto;
+        margin-top: 57 / 36rem;
+        margin-bottom: 35 / 36rem;
+      }
+      p {
+        margin-left: 15 / 36rem;
+        margin-right:15 / 36rem;
+        text-align: center;
+        color: #000;
+        font-family: microsoft yahei;
+        height:50 / 36rem;
+        overflow: hidden;
+        span {
+          font-size: 26 / 36rem;
+        }
+      }
+      .title {
+        display: block;
+        font-size: 22 / 36rem;
+        width: 103 / 36rem;
+        height: 36 / 36rem;
+        background-color: #FF5757;
+        color: #fff;
+        text-align: center;
+        line-height: 36 / 36rem;
+        border-radius: 4px;
+        position: absolute;
+        bottom: 76 / 36rem;
+        left: 108 / 36rem;
+      }
+      .price {
+        position: absolute;
+        left: 16 / 36rem;
+        bottom: 15 / 36rem;
+      }
+      .ntd {
+        display: inline-block;
+        width: 30 / 36rem;
+        margin-bottom: 2 / 36rem;
+      }
+      .jiage {
+        color: #38A9EF;
+        font-size: 32 / 36rem;
+        font-weight: 600;
+        margin-left: 10 / 36rem;
+      }
+    }
+  }
+  .return_top {
+    position: fixed;
+    right:30 / 36rem;
+    bottom: 81 / 36rem;
+    width: 78 / 36rem;
+    height: 78 / 36rem;
+    border-radius: 50%;
+    background: url(../images/sprites.png) no-repeat;
+    background-size: 877 / 36rem;
+  }
+  //product部分start
+
