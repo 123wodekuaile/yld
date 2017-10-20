@@ -134,19 +134,18 @@ header,
 hgroup,
 menu,
 nav,
-section {
+section,
+span {
   margin: 0;
   padding: 0;
   border: none;
 }
 body {
   margin: 0 auto;
-  min-width: 320px;
   max-width: auto;
   font-family: "Microsoft YaHei", Arial, "Helvetica";
   background: #f2f2f2;
   color: #333;
-  font-size: 1.2rem;
 }
 em,
 i {

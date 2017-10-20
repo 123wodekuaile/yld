@@ -1,4 +1,6 @@
 $(function () {
+    document.documentElement.style.fontSize = document.documentElement.clientWidth / 20 + 'px';
+
     var _index = {
         init: function () {
             this.lunbo();
@@ -108,10 +110,16 @@ $(function () {
             }
         },
         bindEvent: function () {
-            $('.search_glass').click(function () {
-                var keyword = $.trim($("#keyword").val());
-                window.location.href = "./views/detail.html";
-            })
+            $(".icon2").click(function () {
+                $(".container").hide().prev(".header").find("span").text("医立达之售后服务政策及流程");
+                $(".shouye").show();
+            });
+            $(".icon1").click(function () {
+                if($(this).next().text()==="医立达之售后服务政策及流程"){
+                    window.location.href = "index.html";
+                    $(".shouye").hide();
+                }
+            });
         },
         getUrlParam: function (name) {
             var reg     = new RegExp('(^|&)' + name + '=([^&]*)(&|$)');
@@ -129,13 +137,12 @@ $(function () {
             _index.search();
         }
     });
-    $('.return_top').css('display','none');
     $(window).scroll(function () {
         var windowTop = $(this).scrollTop();
         if(windowTop>=300){
-            $('.return_top').css('display','block');
+            $('.return_top').show();
         }else {
-            $('.return_top').css('display','none');
+            $('.return_top').hide();
         }
     });
     $('.return_top').on('click',function(e){

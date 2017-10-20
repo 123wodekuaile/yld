@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="../components/swipers/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="../public/css/goods_detail.css">
+</head>
+<body>
+<div class="header">
+    <a href="javascript:history.back(-1);" class="icon1"></a>
+    <span>合世血压计</span>
+</div>
+<div class="container">
+    <div class="mask"></div>
+    <div class="goods">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="../public/images/banner111.jpg"></div>
+                <div class="swiper-slide"><img src="../public/images/banner222.jpg"></div>
+                <div class="swiper-slide"><img src="../public/images/banner333.jpg"></div>
+                <div class="swiper-slide"><img src="../public/images/banner222.jpg"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="goods_name">
+            <span class="name">合世-血压计</span>
+            <span class="title">新品上市</span>
+            <p>售<s></s>價 :
+                <img src="../public/images/ntd.png" alt="">
+                <span class="price">656-1120</span>
+            </p>
+        </div>
+        <div class="goods_chance">
+        <span>请选择商品
+            <i></i>
+        </span>
+        </div>
+    </div>
+    <div class="goods_online">
+        <div class="goods_spec">
+            <p>售<s></s>價 :
+                <img src="../public/images/ntd.png" alt="">
+                <span class="price">656-1120</span>
+            </p>
+            <p>商品规格 :<span class="spec">2粒每日</span></p>
+            <p>商品編碼 :<span class="code">25025202</span></p>
+        </div>
+        <div class="detail_spec">
+            请选择商品 :
+            <ul>
+                <li class="chance">
+                    合世-血压计
+                </li>
+                <li class="chance">
+                    欧姆龙电子血压计
+                </li>
+                <li class="chance">
+                    深海鱼调和精油
+                </li>
+            </ul>
+        </div>
+        <div class="detail_buy">
+            <span class="mount">購買數量</span>
+            <div class="number">
+                <span class="less">-</span>
+                <input type="text" value="1">
+                <span class="add">+</span>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="left">
+                <span>加入購物車</span>
+            </div>
+            <div class="right">
+                <span>立即購買</span>
+            </div>
+        </div>
+    </div>
+    <div class="goods_offline">
+        <div class="goods_spec">
+            <p>售<s></s>價 :
+                <img src="../public/images/ntd.png" alt="">
+                <span class="price">656-1120</span>
+            </p>
+            <p>商品规格 :<span class="spec">2粒每日</span></p>
+            <p>商品編碼 :<span class="code">25025202</span></p>
+        </div>
+        <div class="detail_spec">
+            请选择商品 :
+            <ul>
+                <li class="chance">
+                    合世-血压计
+                </li>
+                <li class="chance">
+                    欧姆龙电子血压计
+                </li>
+                <li class="chance">
+                    深海鱼调和精油
+                </li>
+            </ul>
+        </div>
+        <div class="detail_buy">
+            依照法令限制,本商品属于线下下单,请与客服联络,或留下您的联系方式
+        </div>
+        <div class="footer">
+            <div class="left">
+                <span>请联络我</span>
+            </div>
+            <div class="right">
+                <span>联络客服</span>
+            </div>
+        </div>
+    </div>
+    <div class="box">
+        <img src="../public/images/detail.jpg" alt="">
+    </div>
+    <div class="return_top">
+
+    </div>
+</div>
+<div class="sub_container">
+    <div class="contact">
+        <p>联络人：<input type="text"></p>
+        <p>联络方式：<input type="text"></p>
+    </div>
+    <button type="submit" value="送出" class="submit">送出</button>
+</div>
+<div class="server">
+    <div class="cancel">
+
+    </div>
+    <div class="top">
+        联络方式
+    </div>
+    <div class="middle">
+        客服电话：0800XXXXX </br>
+        客服时间：XX:XX-XX:XX</br>
+        (非国定假日)
+    </div>
+    <div class="under">
+        <div class="left">
+            <a href="tel:10086">立即拨打
+        </div>
+        <div class="right">
+            取消
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+<script src="../components/jquery/jquery-1.11.1.js"></script>
+<script src="../components/swipers/swiper-3.4.2.min.js"></script>
+<script src="../script/goods_detail.js"></script>
+<script>
+    var mySwiper = new Swiper('.swiper-container', {
+        direction: 'horizontal',
+        loop: 'true',
+        pagination: '.swiper-pagination',
+        autoplay: 3000,
+        autoplayDisableOnInteraction : false,
+        // 如果需要前进后退按钮
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev'
+    });
+</script>
+</html>

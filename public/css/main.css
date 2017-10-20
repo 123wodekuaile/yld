@@ -1,39 +1,4 @@
 @charset "utf-8";
-@media only screen and (min-width: 320px) {
-  html {
-    font-size: 16px;
-  }
-}
-@media only screen and (min-width: 360px) {
-  html {
-    font-size: 18px;
-  }
-}
-@media only screen and (min-width: 375px) {
-  html {
-    font-size: 18.75px;
-  }
-}
-@media only screen and (min-width: 400px) {
-  html {
-    font-size: 20px;
-  }
-}
-@media only screen and (min-width: 411px) {
-  html {
-    font-size: 20.55px;
-  }
-}
-@media only screen and (min-width: 414px) {
-  html {
-    font-size: 20.7px;
-  }
-}
-@media only screen and (min-width: 640px) {
-  html {
-    font-size: 30px;
-  }
-}
 /* 禁用iPhone中Safari的字号自动调整 */
 html {
   -webkit-text-size-adjust: 100%;
@@ -134,19 +99,18 @@ header,
 hgroup,
 menu,
 nav,
-section {
+section,
+span {
   margin: 0;
   padding: 0;
   border: none;
 }
 body {
   margin: 0 auto;
-  min-width: 320px;
   max-width: auto;
   font-family: "Microsoft YaHei", Arial, "Helvetica";
   background: #f2f2f2;
   color: #333;
-  font-size: 1.2rem;
 }
 em,
 i {
@@ -200,6 +164,10 @@ img {
   width: 100%;
   overflow: hidden;
 }
+body {
+  padding-top: 2.66666667rem;
+  background-color: #F4F7FC;
+}
 .header {
   width: 100%;
   height: 2.66666667rem;
@@ -209,7 +177,11 @@ img {
   line-height: 2.66666667rem;
   color: #fff;
   border-bottom: 1px solid #A2A6A7;
-  position: relative;
+  transform: translateZ(0);
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
 }
 .header .icon1 {
   position: absolute;
@@ -223,7 +195,7 @@ img {
 .iconfont {
   font-family: iconfont;
 }
-.container {
+body {
   width: 100%;
   background-color: #F4F7FC;
 }
@@ -245,7 +217,7 @@ img {
   height: 100%;
 }
 .swiper-pagination {
-  top: 10.83333333rem;
+  top: 11rem;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -367,7 +339,7 @@ img {
   width: 31.4%;
 }
 .toggle .line {
-  width: 0.5%;
+  width: 1px;
   height: 1.36111111rem;
   background-color: #ccc;
   margin-top: 0.27777778rem;
@@ -408,17 +380,17 @@ img {
 }
 .pro .product .title {
   display: block;
-  font-size: 0.61111111rem;
-  width: 2.86111111rem;
   height: 1rem;
+  line-height: 1rem;
+  font-size: 0.61111111rem;
   background-color: #FF5757;
   color: #fff;
-  text-align: center;
-  line-height: 1rem;
-  border-radius: 4px;
+  padding: 0 0.19444444rem;
+  border-radius: 0.11111111rem;
   position: absolute;
   bottom: 2.11111111rem;
-  left: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .pro .product .price {
   position: absolute;
@@ -436,7 +408,12 @@ img {
   font-weight: 600;
   margin-left: 0.27777778rem;
 }
+.shouye {
+  display: none;
+  padding-top: 2.66666667rem;
+}
 .return_top {
+  display: none;
   position: fixed;
   right: 0.83333333rem;
   bottom: 2.25rem;

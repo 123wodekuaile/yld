@@ -1,39 +1,4 @@
 @charset "utf-8";
-@media only screen and (min-width: 320px) {
-  html {
-    font-size: 16px;
-  }
-}
-@media only screen and (min-width: 360px) {
-  html {
-    font-size: 18px;
-  }
-}
-@media only screen and (min-width: 375px) {
-  html {
-    font-size: 18.75px;
-  }
-}
-@media only screen and (min-width: 400px) {
-  html {
-    font-size: 20px;
-  }
-}
-@media only screen and (min-width: 411px) {
-  html {
-    font-size: 20.55px;
-  }
-}
-@media only screen and (min-width: 414px) {
-  html {
-    font-size: 20.7px;
-  }
-}
-@media only screen and (min-width: 640px) {
-  html {
-    font-size: 30px;
-  }
-}
 /* 禁用iPhone中Safari的字号自动调整 */
 html {
   -webkit-text-size-adjust: 100%;
@@ -134,19 +99,18 @@ header,
 hgroup,
 menu,
 nav,
-section {
+section,
+span {
   margin: 0;
   padding: 0;
   border: none;
 }
 body {
   margin: 0 auto;
-  min-width: 320px;
   max-width: auto;
   font-family: "Microsoft YaHei", Arial, "Helvetica";
   background: #f2f2f2;
   color: #333;
-  font-size: 1.2rem;
 }
 em,
 i {
@@ -200,6 +164,10 @@ img {
   width: 100%;
   overflow: hidden;
 }
+body {
+  padding-top: 2.66666667rem;
+  background-color: #F4F7FC;
+}
 .header {
   width: 100%;
   height: 2.66666667rem;
@@ -209,7 +177,11 @@ img {
   line-height: 2.66666667rem;
   color: #fff;
   border-bottom: 1px solid #A2A6A7;
-  position: relative;
+  transform: translateZ(0);
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
 }
 .header .icon1 {
   position: absolute;

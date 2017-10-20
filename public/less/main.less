@@ -1,11 +1,6 @@
-  //适配
-  @import "adapter.less";
 
   //重置
   @import "base.less";
-
-  //字体图标
-  @import "font.less";
 
   //頭部
   @import "common.less";
@@ -13,7 +8,7 @@
   .iconfont{
     font-family: iconfont;
   }
-  .container {
+  body {
     width: 100%;
     background-color: #F4F7FC;
   }
@@ -39,7 +34,7 @@
     }
   }
   .swiper-pagination {
-    top: 390 / 36rem;
+    top: 396 / 36rem;
     left: 50%;
     transform: translateX(-50%);
     .swiper-pagination-bullet {
@@ -49,8 +44,6 @@
       background:#535353;
     }
   }
-
-
   //search部分开始
   .search {
     width: 100%;
@@ -167,7 +160,7 @@
         width: 31.4%;
       }
       .line {
-        width: 0.5%;
+        width: 1px;
         height: 49 / 36rem;
         background-color: #ccc;
         margin-top: 10 / 36rem;
@@ -208,17 +201,17 @@
       }
       .title {
         display: block;
+        height: 1rem;
+        line-height: 1rem;
         font-size: 22 / 36rem;
-        width: 103 / 36rem;
-        height: 36 / 36rem;
         background-color: #FF5757;
         color: #fff;
-        text-align: center;
-        line-height: 36 / 36rem;
-        border-radius: 4px;
+        padding: 0 7 / 36rem;
+        border-radius: 4 / 36rem;
         position: absolute;
         bottom: 76 / 36rem;
-        left: 108 / 36rem;
+        left: 50%;
+        transform: translateX(-50%);
       }
       .price {
         position: absolute;
@@ -238,7 +231,12 @@
       }
     }
   }
+  .shouye {
+    display: none;
+    padding-top: 96 / 36rem;
+  }
   .return_top {
+    display: none;
     position: fixed;
     right:30 / 36rem;
     bottom: 81 / 36rem;
