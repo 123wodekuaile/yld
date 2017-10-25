@@ -1,11 +1,7 @@
-//适配
-@import "adapter.less";
+
 
 //重置
 @import "base.less";
-
-//字体图标
-@import "font.less";
 
 //頭部
 @import "common.less";
@@ -36,6 +32,16 @@
     font-size: 26 /36rem;
     color: #929292;
   }
+  .icon{
+    display: block;
+    position: absolute;
+    top: 71 / 36rem;
+    width: 16 / 36rem;
+    height: 28 / 36rem;
+    background: url(../images/sprites.png) no-repeat -272/36rem -4/36rem;
+    background-size: 877 / 36rem;
+    right: 30 / 36rem;
+  }
 }
 .order_main {
   width: 100%;
@@ -46,37 +52,12 @@
   .order_info {
     padding-left: 30 / 36rem;
     background-color: #fff;
-    .info_water {
-      width: 690 / 36rem;
-      height: 78 / 36rem;
-      background-color: #fff;
-      border-bottom: 1px solid #E6E6E6;
-      font-size: 24 / 36rem;
-      color: #fff;
-      span {
-        display: block;
-        float: left;
-        &.green {
-          width: 162 / 36rem;
-          height: 46 / 36rem;
-          background-color: #42D666;
-          border-radius: 2px;
-          text-align: center;
-          line-height: 46 / 36rem;
-          margin-top: 16 / 36rem;
-          margin-right: 34 / 36rem;
-        }
-        &.number {
-          color: #000;
-          margin-top: 25 / 36rem;
-        }
-      }
-    }
+    border-bottom: 1px solid #E0E0E2;
     .info_send {
       width: 690 / 36rem ;
       height: 60 / 36rem;
       border-bottom: 1px solid #E6E6E6;
-      line-height: 50 / 36rem;
+      line-height: 60 / 36rem;
       .send {
         font-size: 30 / 36rem;
         color: #000;
@@ -89,24 +70,25 @@
     }
     .info_type {
       width: 690 / 36rem;
-      height: 181 / 36rem;
+      height: 232 / 36rem;
       border-bottom: 1px solid #E6E6E6;
       position: relative;
+      font-size: 26 / 36rem;
       img {
         width: 150 / 36rem;
         height: 100%;
       }
       .type_desc {
-        font-size: 26 / 36rem;
-        color: #4F4F4F;
+        color: #4A4A4A;
         margin-left: 38 / 36rem;
         p {
           margin-top: 18 / 36rem;
+          &:nth-child(2) {
+            margin-top: 10 /36rem;
+          }
         }
         .name {
-          float: ;
-          font-size: 30 / 36rem;
-          color: #000;
+          color: #4A4A4A;
           span {
             position: absolute;
             top: 30 / 36rem;
@@ -121,53 +103,91 @@
         }
         .price {
           color: #38A9EF;
-          font-size: 26/ 36rem;
-          font-weight: 600;
+          font-size: 36 / 36rem;
         }
       }
     }
     .info_express {
-      height: 80 / 36rem;
+      height: 151 / 36rem;
       font-size: 26 / 36rem;
       line-height: 80 / 36rem;
-      border-bottom: 1px solid #E6E6E6;
       padding-right: 30 / 36rem;
+      position: relative;
+      .total {
+        position: absolute;
+        top: 68/ 36rem;
+        right: 30 / 36rem;
+        .subtotal {
+          margin-left: 10 / 36rem;
+        }
+      }
+      .mount {
+        position: absolute;
+        left: 65 / 36rem;
+        top: 76 / 36rem;
+        .change {
+          width: 181 / 36rem;
+          height: 50 / 36rem;
+          position: absolute;
+          left: 134 / 36rem;
+          top: 10 / 36rem;
+          input {
+            float: left;
+            font-size: 26 / 36rem;
+            width: 55 / 36rem;
+            height: 50 / 36rem;
+            text-align: center;
+          }
+        }
+        .less,.add {
+          display: block;
+          width: 63 / 36rem;
+          height: 50 / 36rem;
+          background-color: #EEEEEE;
+          color: #909090;
+          text-align: center;
+          line-height: 50 / 36rem;
+          font-size: 38 / 36rem;
+          font-weight: 600;
+        }
+      }
       .ntd {
         width: 30 / 36rem;
         display: inline-block;
       }
       .price {
         color: #38A9EF;
-        font-size: 26/ 36rem;
-        font-weight: 600;
+        font-size: 36 / 36rem;
       }
-      .subtotal {
-        margin-left: 10 / 36rem;
-      }
-    }
-    .order_invoice {
-      width: 690 / 36rem;
-      height: 94 / 36rem;
-      font-size: 26 / 36rem;
-      color: #9E9E9E;
-      padding-top: 18 /36rem;
-      .invoice_info {
-        margin-bottom: 10 /36rem;
-      }
-      .number {
-        margin-left: 45 /36rem;
-      }
-      .invoice_person {
-        color: #000;
-      }
+
     }
   }
+  .order_invoice {
+    height: 78 / 36rem;
+    line-height: 78 / 36rem;
+    padding: 0 30 / 36rem;
+    background-color: #fff;
+    border-top: 1px solid #E0E0E2;
+    margin-top: 25 / 36rem;
+    font-size: 30 / 36rem;
+    .fr {
+      display: block;
+      width: 16 / 36rem;
+      height: 28 / 36rem;
+      background: url(../images/sprites.png) no-repeat -272/36rem -5/36rem;
+      background-size: 877 / 36rem;
+      margin-top: 24 / 36rem;
+    }
+  }
+
 }
 .order_pay {
   padding: 0 30 / 36rem;
   background-color: #fff;
   font-size : 30 / 36rem;
-  position: relative;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   height: 129 / 36rem;
   p {
     line-height: 65 / 36rem;
@@ -179,10 +199,9 @@
   }
   .money {
     color: #38A9EF;
-    font-size: 30/ 36rem;
-    font-weight: 600;
+    font-size: 36 / 36rem;
   }
-  .cancel,.pay {
+  .pay {
     width: 150 / 36rem;
     height: 68 / 36rem;
     border-radius: 8 / 36rem;
@@ -191,16 +210,8 @@
     line-height: 68 / 36rem;
     position: absolute;
     top : 39 / 36rem;
-  }
-  .cancel {
-    border: 1px solid #45D46B;
-    background-color: #fff;
-    right: 200 / 36rem;
-    color: #45D46B;
-  }
-  .pay {
-    background-color: #45D46B;
-    color: #fff;
-    right: 39 / 36rem;
+    right:90 / 36rem;
+    border: 1px solid #58B6EC;
+    color: #58B6EC;
   }
 }

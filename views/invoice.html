@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="../public/css/invoice.css">
+    <script>
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = clientWidth/20+"px";
+                };
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+    </script>
+</head>
+<body>
+<div class="header">
+    <a href="javascript:history.back(-1);" class="icon1"></a>
+    <span>发票信息</span>
+</div>
+
+<div class="top">
+    <ul>
+        <li> 个人发票（二联式）<span class="yes"></span></li>
+        <li> 公司发票（三联式）<span class="no"></span></li>
+        <li class="two"> 买受人：<input type="text" placeholder="真实姓名" style="caret-color:#38A8F4"></li>
+        <li class="three" style="display: none;"> 发票抬头：<input type="text" placeholder="企业名称(必填项)"></li>
+        <li class="three" style="display: none;"> 统一编号：<input type="text" placeholder="必填项"></li>
+    </ul>
+</div>
+
+<div class="middle">
+    <section class="info_edit clearfix">
+        <span>发票寄送讯息</span>
+        <ul>
+            <li>联 络 人： <input type="text"></li>
+            <li>联络方式： <input type="text"></li>
+            <li>Email：    <input type="text"></li>
+            <li>所在地區： <input type="text" value="台北市 高新区" readonly> <span class="icon"></span></li>
+            <li >詳細地址： <textarea cols="30" rows="4" style="vertical-align:top; margin-top: 8px;resize:none;outline:none;overflow:hidden"></textarea> </li>
+            <li>郵遞區號： <input type="text"></li>
+        </ul>
+    </section>
+</div>
+
+<div class="footer">
+    确定
+</div>
+
+<script src="../components/jquery/jquery-1.11.1.js"></script>
+<script src="../script/invoice.js"></script>
+</body>
+</html>

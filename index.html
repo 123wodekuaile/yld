@@ -6,6 +6,20 @@
     <title>Title</title>
     <link rel="stylesheet" href="./components/swipers/swiper-3.4.2.min.css">
     <link rel="stylesheet" href="./public/css/main.css">
+    <script>
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = clientWidth/20+"px";
+                };
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+    </script>
 <body>
 <!--外層盒子-->
 <div class="header clearfix">

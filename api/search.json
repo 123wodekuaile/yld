@@ -1,24 +1,24 @@
 {
   "data": [
-    { "url":"views/order_detail.html",
+    { "url":"views/goods_detail.html",
       "img":"./public/images/111.png",
       "price": "120-200",
       "title":"專業的風景期待專業的你",
       "banner":"火爆銷售中"
     },
-    { "url":"views/order_detail.html",
+    { "url":"views/goods_detail.html",
       "img":"./public/images/b123.jpg",
       "price": "130-200",
       "title":"歡迎來報名",
       "banner":"新品上市"
     },
-    { "url":"views/order_detail.html",
+    { "url":"views/goods_detail.html",
       "img":"./public/images/222.jpg",
       "price": "150-200",
       "title":"我在這裡等你啊",
       "banner":"假一賠十"
     },
-    { "url":"views/order_detail.html",
+    { "url":"views/goods_detail.html",
       "img":"./public/images/d123.jpg",
       "price": "160-310",
       "title":"清澈又神秘貝加爾湖畔",

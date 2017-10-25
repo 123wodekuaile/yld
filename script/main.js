@@ -1,6 +1,4 @@
 $(function () {
-    document.documentElement.style.fontSize = document.documentElement.clientWidth / 20 + 'px';
-
     var _index = {
         init: function () {
             this.lunbo();
@@ -126,7 +124,7 @@ $(function () {
             var result  = window.location.search.substr(1).match(reg);
             return result ? decodeURIComponent(result[2]) : null;
         }
-    }
+    };
     _index.init();
 
     $(window).scroll(function () {
@@ -150,14 +148,8 @@ $(function () {
     });
     $(".search_glass").click(function () {
 
-    })
+    });
     console.log($('.toggle a:even').text());
 });
-
-
-//輪播圖切換
-
-
-//ajax函數
 
 

@@ -55,6 +55,41 @@ function getCookie(cookieName) {
     }
 }
 
+//字段的验证
+function formValidate(formData){
+    var result = {
+        status  : false,
+        msg     : ''
+    };
+    if(validate(formData.username, 'require')){
+        result.msg = '用户名不能为空';
+        return result;
+    }
+    if(validate(formData.password, 'require')){
+        result.msg = '密码不能为空';
+        return result;
+    }
+    // 通过验证，返回正确提示
+    result.status   = true;
+    result.msg      = '验证通过';
+    return result;
+}
+function validate(value, type){
+    var value = $.trim(value);
+    // 非空验证
+    if('require' === type){
+        return !!value;
+    }
+    // 手机号验证
+    if('phone' === type){
+        return /^1\d{10}$/.test(value);
+    }
+    // 邮箱格式验证
+    if('email' === type){
+        return /^(\w)+(\.\w+)*@(\w)+((\.\w{2,3}){1,3})$/.test(value);
+    }
+}
+
 
 
 

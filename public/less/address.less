@@ -1,22 +1,16 @@
-//适配
-@import "adapter.less";
 
-//重置
 @import "base.less";
-
-//字体图标
-@import "font.less";
 
 //頭部
 @import "common.less";
-section {
-  border-top: 1px solid #D9D8E0;
+.info_look {
   border-bottom: 1px solid #D9D8E0;
   background-color: #fff;
+  margin-bottom: 87 / 36rem;
   .address_detail {
     margin-left: 30 / 36rem;
     padding: 20 / 36rem 0;
-    border-bottom: 1px solid #E7E7E7;
+    border-top: 1px solid #E7E7E7;
     position: relative;
     .name {
       float: left;
@@ -50,26 +44,105 @@ section {
   }
 }
 .info_edit {
-
-  div {
-    padding-left: 30 /36rem;
-    font-size: 30 / 36rem;
-    i {
-      margin-right: 15 / 36rem;
+  background-color: #fff;
+  font-size: 30 / 36rem;
+  padding-left: 30 / 36rem;
+  border-bottom: 1px solid #DCE0E3;
+  li {
+    width: 100%;
+    height: 69 / 36rem;
+    border-top: 1px solid #DCE0E3;
+    line-height: 69 / 36rem;
+    &:nth-child(5) {
+      height:206 / 36rem;
     }
-    li,input {
-      float: left;
-      height: 69 / 36re;
-      line-height: 69 / 36rem;
+    &:nth-child(1) {
+      border: none;
     }
-    input {
-      margin-left: 33 / 36rem;
-      font-size: 30 /36rem;
-      width: 70%;
+    &:nth-child(4) {
+      position: relative;
     }
-    textarea {
+    .icon{
+      display: block;
+      position: absolute;
+      top: 20 / 36rem;
+      width: 16 / 36rem;
+      height: 28 / 36rem;
+      background: url(../images/sprites.png) no-repeat -272/36rem -4/36rem;
+      background-size: 877 / 36rem;
+      right: 30 / 36rem;
+    }
+    input,textarea {
+      width: 520 / 36rem;
       font-size: 30 / 36rem;
       font-family: "Microsoft YaHei";
+      caret-color:#38A8F4;
     }
   }
 }
+.default {
+  height: 78 / 36rem;
+  background-color: #fff;
+  margin-top: 25 / 36rem;
+  margin-bottom: 25 / 36rem;
+  padding-left: 30 / 36rem;
+  border-top: 1px solid #DFE0E4;
+  border-bottom: 1px solid #DFE0E4;
+  position: relative;
+  font-size: 30 / 36rem;
+  line-height: 78 / 36rem;
+  .box {
+    width: 70 / 36rem;
+    height: 41 / 36rem;
+    border-radius: 20 / 36rem;
+    background-color: #42D666;
+    position: absolute;
+    transition: all 0s ease-in 0s;
+    right: 30 / 36rem;
+    top: 19 / 36rem;
+    .ball {
+      width: 36 / 36rem;
+      height: 37 / 36rem;
+      border: 1px solid #42D666;
+      border-radius: 50%;
+      background-color: #fff;
+      position: absolute;
+      top: 0;
+      right:0;
+      transition: all 0s ease-in 0s;
+    }
+    .two {
+      border: 1px solid #CCC;
+      left:0;
+    }
+  }
+  .one {
+    background-color: #ccc;
+  }
+
+
+}
+.delete {
+  height: 78 / 36rem;
+  background-color: #fff;
+  line-height: 78 / 36rem;
+  color: #F05F4E;
+  border-top: 1px solid #DFE0E4;
+  border-bottom: 1px solid #DFE0E4;
+  font-size: 30 / 36rem;
+  padding-left: 30 / 36rem;
+  margin-bottom: 87 / 36rem;
+}
+.footer {
+  height: 87 / 36rem;
+  text-align: center;
+  line-height: 87 / 36rem;
+  color: #3AABFB;
+  font-size: 35 / 36rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+  border-top: 1px solid #DFE0E4;
+}
+

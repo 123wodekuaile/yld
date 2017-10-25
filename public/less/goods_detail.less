@@ -5,7 +5,7 @@
 //頭部
 @import "common.less";
 
-.mask {
+.mask1 {
   display: none;
   position:fixed;
   width:100%;
@@ -14,7 +14,18 @@
   left: 0;
   background-color: #000;
   opacity:0.4;
-  z-index:99;
+  z-index:998;
+}
+.mask2 {
+  display: none;
+  position:fixed;
+  width:100%;
+  height:100%;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  opacity:0.5;
+  z-index:1001;
 }
 .goods{
   width: 100%;
@@ -277,7 +288,7 @@
 .goods_offline{
   position: fixed;
   bottom: -100%;
-  z-index:999;
+  z-index:1000;
   box-shadow: 2px;
   background-color: #fff;
   .detail_spec {
@@ -393,6 +404,7 @@
   }
 }
 .server {
+  display: none;
   width: 516 / 36rem;
   height: 320 / 36rem;
   background-color: #fff;
@@ -400,10 +412,10 @@
   border-left: 1px solid #A8A8A8;
   border-right: 1px solid #A8A8A8;
   border-bottom: 1px solid #A8A8A8;
-  position: absolute;
-  top: 320 / 36rem;
+  position: fixed;
+  top: 50 / 36rem;
   left: 92 / 36rem;
-  z-index: 1001;
+  z-index: 1002;
   .cancel {
     width: 57 / 36rem;
     height: 57 / 36rem;
@@ -433,7 +445,6 @@
   }
   .under {
     width: 100%;
-    color: #38D667;
     font-size: 28 / 36rem;
     line-height: 78 / 36rem;
     .left {

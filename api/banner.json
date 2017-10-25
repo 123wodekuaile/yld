@@ -1,11 +1,11 @@
 {
   "data":[
-    {"img":"./public/images/banner111.jpg","url":"./views/detail.html"},
-    {"img":"./public/images/banner222.jpg","url":"./views/detail.html"},
-    {"img":"./public/images/banner333.jpg","url":"./views/detail.html"},
-    {"img":"./public/images/banner111.jpg","url":"./views/detail.html"},
-    {"img":"./public/images/banner222.jpg","url":"./views/detail.html"},
-    {"img":"./public/images/banner333.jpg","url":"./views/detail.html"}
+    {"img":"./public/images/banner111.jpg","url":"./views/goods_detail.html"},
+    {"img":"./public/images/banner222.jpg","url":"./views/goods_detail.html"},
+    {"img":"./public/images/banner333.jpg","url":"./views/goods_detail.html"},
+    {"img":"./public/images/banner111.jpg","url":"./views/goods_detail.html"},
+    {"img":"./public/images/banner222.jpg","url":"./views/goods_detail.html"},
+    {"img":"./public/images/banner333.jpg","url":"./views/goods_detail.html"}
   ],
   "items":["sdfs","asd","adads"]
 }

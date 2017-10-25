@@ -1,39 +1,4 @@
 @charset "utf-8";
-@media only screen and (min-width: 320px) {
-  html {
-    font-size: 16px;
-  }
-}
-@media only screen and (min-width: 360px) {
-  html {
-    font-size: 18px;
-  }
-}
-@media only screen and (min-width: 375px) {
-  html {
-    font-size: 18.75px;
-  }
-}
-@media only screen and (min-width: 400px) {
-  html {
-    font-size: 20px;
-  }
-}
-@media only screen and (min-width: 411px) {
-  html {
-    font-size: 20.55px;
-  }
-}
-@media only screen and (min-width: 414px) {
-  html {
-    font-size: 20.7px;
-  }
-}
-@media only screen and (min-width: 640px) {
-  html {
-    font-size: 30px;
-  }
-}
 /* 禁用iPhone中Safari的字号自动调整 */
 html {
   -webkit-text-size-adjust: 100%;
@@ -145,7 +110,7 @@ body {
   max-width: auto;
   font-family: "Microsoft YaHei", Arial, "Helvetica";
   background: #f2f2f2;
-  color: #333;
+  color: #000;
 }
 em,
 i {
@@ -253,6 +218,16 @@ body {
   font-size: 0.72222222rem;
   color: #929292;
 }
+.order_address .icon {
+  display: block;
+  position: absolute;
+  top: 1.97222222rem;
+  width: 0.44444444rem;
+  height: 0.77777778rem;
+  background: url(../images/sprites.png) no-repeat -7.55555556rem -0.11111111rem;
+  background-size: 24.36111111rem;
+  right: 0.83333333rem;
+}
 .order_main {
   width: 100%;
   border-top: 1px solid #E6E6E6;
@@ -263,38 +238,13 @@ body {
 .order_main .order_info {
   padding-left: 0.83333333rem;
   background-color: #fff;
-}
-.order_main .order_info .info_water {
-  width: 19.16666667rem;
-  height: 2.16666667rem;
-  background-color: #fff;
-  border-bottom: 1px solid #E6E6E6;
-  font-size: 0.66666667rem;
-  color: #fff;
-}
-.order_main .order_info .info_water span {
-  display: block;
-  float: left;
-}
-.order_main .order_info .info_water span.green {
-  width: 4.5rem;
-  height: 1.27777778rem;
-  background-color: #42D666;
-  border-radius: 2px;
-  text-align: center;
-  line-height: 1.27777778rem;
-  margin-top: 0.44444444rem;
-  margin-right: 0.94444444rem;
-}
-.order_main .order_info .info_water span.number {
-  color: #000;
-  margin-top: 0.69444444rem;
+  border-bottom: 1px solid #E0E0E2;
 }
 .order_main .order_info .info_send {
   width: 19.16666667rem;
   height: 1.66666667rem;
   border-bottom: 1px solid #E6E6E6;
-  line-height: 1.38888889rem;
+  line-height: 1.66666667rem;
 }
 .order_main .order_info .info_send .send {
   font-size: 0.83333333rem;
@@ -308,26 +258,27 @@ body {
 }
 .order_main .order_info .info_type {
   width: 19.16666667rem;
-  height: 5.02777778rem;
+  height: 6.44444444rem;
   border-bottom: 1px solid #E6E6E6;
   position: relative;
+  font-size: 0.72222222rem;
 }
 .order_main .order_info .info_type img {
   width: 4.16666667rem;
   height: 100%;
 }
 .order_main .order_info .info_type .type_desc {
-  font-size: 0.72222222rem;
-  color: #4F4F4F;
+  color: #4A4A4A;
   margin-left: 1.05555556rem;
 }
 .order_main .order_info .info_type .type_desc p {
   margin-top: 0.5rem;
 }
+.order_main .order_info .info_type .type_desc p:nth-child(2) {
+  margin-top: 0.27777778rem;
+}
 .order_main .order_info .info_type .type_desc .name {
-  float: ;
-  font-size: 0.83333333rem;
-  color: #000;
+  color: #4A4A4A;
 }
 .order_main .order_info .info_type .type_desc .name span {
   position: absolute;
@@ -342,15 +293,53 @@ body {
 }
 .order_main .order_info .info_type .type_desc .price {
   color: #38A9EF;
-  font-size: 0.72222222rem;
-  font-weight: 600;
+  font-size: 1rem;
 }
 .order_main .order_info .info_express {
-  height: 2.22222222rem;
+  height: 4.19444444rem;
   font-size: 0.72222222rem;
   line-height: 2.22222222rem;
-  border-bottom: 1px solid #E6E6E6;
   padding-right: 0.83333333rem;
+  position: relative;
+}
+.order_main .order_info .info_express .total {
+  position: absolute;
+  top: 1.88888889rem;
+  right: 0.83333333rem;
+}
+.order_main .order_info .info_express .total .subtotal {
+  margin-left: 0.27777778rem;
+}
+.order_main .order_info .info_express .mount {
+  position: absolute;
+  left: 1.80555556rem;
+  top: 2.11111111rem;
+}
+.order_main .order_info .info_express .mount .change {
+  width: 5.02777778rem;
+  height: 1.38888889rem;
+  position: absolute;
+  left: 3.72222222rem;
+  top: 0.27777778rem;
+}
+.order_main .order_info .info_express .mount .change input {
+  float: left;
+  font-size: 0.72222222rem;
+  width: 1.52777778rem;
+  height: 1.38888889rem;
+  text-align: center;
+}
+.order_main .order_info .info_express .mount .less,
+.order_main .order_info .info_express .mount .add {
+  display: block;
+  width: 1.75rem;
+  height: 1.38888889rem;
+  background-color: #EEEEEE;
+  color: #909090;
+  text-align: center;
+  line-height: 1.38888889rem;
+  font-size: 1.05555556rem;
+  font-weight: 600;
 }
 .order_main .order_info .info_express .ntd {
   width: 0.83333333rem;
@@ -358,33 +347,32 @@ body {
 }
 .order_main .order_info .info_express .price {
   color: #38A9EF;
-  font-size: 0.72222222rem;
-  font-weight: 600;
+  font-size: 1rem;
 }
-.order_main .order_info .info_express .subtotal {
-  margin-left: 0.27777778rem;
+.order_main .order_invoice {
+  height: 2.16666667rem;
+  line-height: 2.16666667rem;
+  padding: 0 0.83333333rem;
+  background-color: #fff;
+  border-top: 1px solid #E0E0E2;
+  margin-top: 0.69444444rem;
+  font-size: 0.83333333rem;
 }
-.order_main .order_info .order_invoice {
-  width: 19.16666667rem;
-  height: 2.61111111rem;
-  font-size: 0.72222222rem;
-  color: #9E9E9E;
-  padding-top: 0.5rem;
-}
-.order_main .order_info .order_invoice .invoice_info {
-  margin-bottom: 0.27777778rem;
-}
-.order_main .order_info .order_invoice .number {
-  margin-left: 1.25rem;
-}
-.order_main .order_info .order_invoice .invoice_person {
-  color: #000;
+.order_main .order_invoice .fr {
+  display: block;
+  width: 0.44444444rem;
+  height: 0.77777778rem;
+  background: url(../images/sprites.png) no-repeat -7.55555556rem -0.13888889rem;
+  background-size: 24.36111111rem;
+  margin-top: 0.66666667rem;
 }
 .order_pay {
   padding: 0 0.83333333rem;
   background-color: #fff;
   font-size: 0.83333333rem;
-  position: relative;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   height: 3.58333333rem;
 }
 .order_pay p {
@@ -397,10 +385,8 @@ body {
 }
 .order_pay .money {
   color: #38A9EF;
-  font-size: 0.83333333rem;
-  font-weight: 600;
+  font-size: 1rem;
 }
-.order_pay .cancel,
 .order_pay .pay {
   width: 4.16666667rem;
   height: 1.88888889rem;
@@ -410,15 +396,7 @@ body {
   line-height: 1.88888889rem;
   position: absolute;
   top: 1.08333333rem;
-}
-.order_pay .cancel {
-  border: 1px solid #45D46B;
-  background-color: #fff;
-  right: 5.55555556rem;
-  color: #45D46B;
-}
-.order_pay .pay {
-  background-color: #45D46B;
-  color: #fff;
-  right: 1.08333333rem;
+  right: 2.5rem;
+  border: 1px solid #58B6EC;
+  color: #58B6EC;
 }

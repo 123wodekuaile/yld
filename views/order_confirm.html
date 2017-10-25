@@ -5,13 +5,27 @@
     <title>Title</title>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="../public/css/order_confirm.css">
+    <script>
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = clientWidth/20+"px";
+                };
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+    </script>
 </head>
 <body>
 
 <div class="container">
     <!--header部分开始-->
     <div class="header">
-        <a href="javascript:history.back();" class="icon1"></a>
+        <a href="javascript:history.back(-1);" class="icon1"></a>
         <span>訂單確認</span>
     </div>
     <!--header部分结束-->
@@ -27,74 +41,55 @@
         <div class="address_detail">
             <span>台北市中凱國際大廈4樓英華達南昌市高溪湖農民公寓124棟</span>
         </div>
+        <span class="icon"></span>
     </div>
     <!--order_address部分结束-->
 
     <!--order_info部分开始-->
     <div class="order_main">
         <div class="order_info">
-            <div class="info_water">
-                <span class="green">交易流水號</span><span class="number">15649841254984156456</span>
-            </div>
             <div class="info_send">
                 <span class="send">出貨地A</span>
-                <span class="orderNumber">訂單編號</span>
-                <span class="number">5016015181418151</span>
             </div>
             <div class="info_type clearfix">
                 <img src="../public/images/666.jpg" alt="" class="fl">
                 <div class="type_desc fl">
-                    <p class="name">HAC-魚油深海膠囊<span class="mount">x2</span></p>
-                    <p>價格 ： <img src="../public/images/ntd.png" alt="" class="ntd">&nbsp;<span class="price">6500</span></p>
-                    <p>規格類型 ： <span class="spec"> 50粒入</span></p>
+                    <p>商品名称：<span  class="name">神魂颠倒散</span></p>
+                    <p>商品售价(含税)：<img src="../public/images/ntd.png" alt="" class="ntd">&nbsp;<span class="price">6500</span></p>
+                    <p>商品规格：<span class="spec"> 50粒入</span></p>
+                    <p>商品数量：<span class="spec"> 5</span></p>
                 </div>
             </div>
             <div class="info_express">
-                <p class="express fl">快遞：<img src="../public/images/ntd.png" alt="" class="ntd">&nbsp;<span class="price">0</span></p>
-                <div class="total fr">
-                    商品數量：<span>15</span>
-                    <span class="subtotal">小計：<img src="../public/images/ntd.png" alt="" class="ntd">&nbsp;<span class="price">6500</span></span>
+                <p class="express fr">快遞：<img src="../public/images/ntd.png" alt="" class="ntd">&nbsp;<span class="price">0</span></p>
+                <div class="total">
+                    <span class="subtotal">金额小計：<img src="../public/images/ntd.png" alt="" class="ntd">&nbsp;<span class="price">6500</span></span>
+                </div>
+                <div class="mount">
+                    数量小计：
+                    <div class="change">
+                        <span class="less fl">-</span>
+                        <input type="text" value="1">
+                        <span class="add fr">+</span>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="order_info">
-            <div class="info_send">
-                <span class="send">出貨地A</span>
-                <span class="orderNumber">訂單編號</span>
-                <span class="number">5016015181418151</span>
-            </div>
-            <div class="info_type clearfix">
-                <img src="../public/images/666.jpg" alt="" class="fl">
-                <div class="type_desc fl">
-                    <p class="name">HAC-魚油深海膠囊<span class="mount">x2</span></p>
-                    <p>價格 ： <img src="../public/images/ntd.png" alt="" class="ntd">&nbsp;<span class="price">6500</span></p>
-                    <p>規格類型 ： <span class="spec"> 50粒入</span></p>
-                </div>
-            </div>
-            <div class="info_express">
-                <p class="express fl">快遞：<img src="../public/images/ntd.png" alt="" class="ntd">&nbsp;<span class="price">0</span></p>
-                <div class="total fr">
-                    商品數量：<span>15</span>
-                    <span class="subtotal">小計：<img src="../public/images/ntd.png" alt="" class="ntd">&nbsp;<span class="price">6500</span></span>
-                </div>
-            </div>
-            <div class="order_invoice">
-                <p class="invoice_info">發票信息</p>
-                <p class="invoice_person">
-                    李xx<span class="number">41454251814561</span>
-                </p>
-            </div>
+        <div class="order_invoice">
+            <span class="fl">发票</span>
+            <span class="fr"></span>
         </div>
+
+
     </div>
     <div class="order_pay">
-        <p>商品數量 ： <span class="mount">4</span></p>
-        <p>合計 ： <span class="money"><img src="../public/images/ntd.png" alt=""> 132</span></p>
-        <div class="cancel">
-            取消訂單
-        </div>
+        <p>商品合计 ： <span class="mount">4</span></p>
+        <p>合计金额(含税) ： <span class="money"><img src="../public/images/ntd.png" alt=""> 132</span></p>
         <div class="pay">
             付款
         </div>
     </div>
+    <script src="../components/jquery/jquery-1.11.1.js"></script>
+    <script src="../script/order_confirm.js"></script>
 </body>
 </html>

@@ -110,7 +110,7 @@ body {
   max-width: auto;
   font-family: "Microsoft YaHei", Arial, "Helvetica";
   background: #f2f2f2;
-  color: #333;
+  color: #000;
 }
 em,
 i {
@@ -283,7 +283,11 @@ body {
   right: 0.83333333rem;
   top: 0.63888889rem;
 }
-.banner {
+.box {
+  width: 100%;
+  height: 44.69444444rem;
+}
+.box .banner {
   display: block;
   width: 100%;
   height: 6.61111111rem;
@@ -292,7 +296,7 @@ body {
   margin-top: 0.69444444rem;
   margin-bottom: 0.69444444rem;
 }
-.banner img {
+.box .banner img {
   width: 100%;
   height: 100%;
 }
@@ -410,7 +414,6 @@ body {
 }
 .shouye {
   display: none;
-  padding-top: 2.66666667rem;
 }
 .return_top {
   display: none;

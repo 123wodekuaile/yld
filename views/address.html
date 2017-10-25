@@ -5,26 +5,67 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Title</title>
     <link rel="stylesheet" href="../public/css/address.css">
+    <script>
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = clientWidth/20+"px";
+                };
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+    </script>
 </head>
 <body>
 <div class="header">
-    <a href="javascript:history.back();" class="icon1"></a>
+    <a href="javascript:history.back(-1);" class="icon1"></a>
     <span>地址管理</span>
 </div>
 <section class="info_look">
     <div class="address_detail">
         <p class="clearfix" style="line-height: 1rem">
-             <span class="name">王先生</span>
-             <span class="tel">15294762843</span>
+            <span class="name">王先生</span>
+            <span class="tel">15294762843</span>
         </p>
         <p class="address" style="width:80%">
             <span>江西省南昌市白水湖管理處雙港東大</span>
         </p>
         <div class="edit">
             <div class="line"></div>
-            <a href="javascript:void(0)" class=""></a>
+            <a href="#" class=""></a>
         </div>
 
+    </div>
+    <div class="address_detail">
+        <p class="clearfix" style="line-height: 1rem">
+            <span class="name">张先生</span>
+            <span class="tel">15294762843</span>
+        </p>
+        <p class="address" style="width:80%">
+            <span>江西省南昌市昌北区双港东大街1180号江西理工大学</span>
+        </p>
+        <div class="edit">
+            <div class="line"></div>
+            <a href="#" class=""></a>
+        </div>
+
+    </div>
+    <div class="address_detail">
+        <p class="clearfix" style="line-height: 1rem">
+            <span class="name">陈先生</span>
+            <span class="tel">15294762843</span>
+        </p>
+        <p class="address" style="width:80%">
+            <span>河南省周口市鹿邑县鸣鹿路森林湖畔小区</span>
+        </p>
+        <div class="edit">
+            <div class="line"></div>
+            <a href="#" class=""></a>
+        </div>
     </div>
     <div class="address_detail">
         <p class="clearfix" style="line-height: 1rem">
@@ -36,47 +77,43 @@
         </p>
         <div class="edit">
             <div class="line"></div>
-            <a href="javascript:void(0)" class=""></a>
+            <a href="#" class=""></a>
         </div>
 
     </div>
-    <div class="address_detail">
-        <p class="clearfix" style="line-height: 1rem">
-            <span class="name">王先生</span>
-            <span class="tel">15294762843</span>
-        </p>
-        <p class="address" style="width:80%">
-            <span>江西省南昌市白水湖管理處雙港東大</span>
-        </p>
-        <div class="edit">
-            <div class="line"></div>
-            <a href="javascript:void(0)" class=""></a>
+    <div class="footer">
+        +添加新地址
+    </div>
+</section>
+<div class="container"  style="display: none;">
+    <section class="info_edit clearfix">
+        <ul>
+            <li>联 络 人： <input type="text"></li>
+            <li>联络方式： <input type="text"></li>
+            <li>Email：    <input type="text"></li>
+            <li>所在地區： <input type="text" readonly value="台北市高新区"><span class="icon"></span></li>
+            <li >詳細地址： <textarea cols="30" rows="4" style="vertical-align:top; margin-top: 8px;resize:none;outline:none;overflow:hidden"></textarea> </li>
+            <li>郵遞區號： <input type="text"></li>
+        </ul>
+    </section>
+    <div class="default">
+        设为默认
+        <div class="box">
+            <div class="ball"></div>
         </div>
+    </div>
+    <div class="delete">
+        删除地址
+    </div>
+    <div class="footer">
+        保存并使用
+    </div>
+</div>
 
-    </div>
-</section>
-<section class="info_edit clearfix" style="display: none;">
-    <div>
-        <li>聯<i></i>絡<i></i>人 :</li><input type="text" class="person_edit">
-    </div>
-    <div>
-        <li>聯絡方式 :</li><input type="text" class="tel_edit">
-    </div>
-    <div>
-        <li>Email :</li><input type="text" class="email_edit">
-    </div>
-    <div class="area">
-        <li>所在地區 :</li><input type="text" class="area_edit">
-    </div>
-    <div>
-        <li>詳細地址 :</li>
-        <textarea name="" id="" cols="30" rows="3" style="margin-top: 8px;outline:none;"></textarea>
-    </div>
-    <div>
-        <li>郵遞區號 :</li><input type="text" class="express_edit">
-    </div>
-</section>
+
+
 </body>
 <script src="../components/jquery/jquery-1.11.1.js"></script>
 <script src="../script/address.js"></script>
+
 </html>

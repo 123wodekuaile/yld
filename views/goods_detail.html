@@ -6,6 +6,20 @@
     <title>Title</title>
     <link rel="stylesheet" href="../components/swipers/swiper-3.4.2.min.css">
     <link rel="stylesheet" href="../public/css/goods_detail.css">
+    <script>
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = clientWidth/20+"px";
+                };
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+    </script>
 </head>
 <body>
 <div class="header">
@@ -13,7 +27,8 @@
     <span>合世血压计</span>
 </div>
 <div class="container">
-    <div class="mask"></div>
+    <div class="mask1"></div>
+    <div class="mask2"></div>
     <div class="goods">
         <div class="swiper-container">
             <div class="swiper-wrapper">
@@ -38,78 +53,80 @@
         </span>
         </div>
     </div>
-    <div class="goods_online">
-        <div class="goods_spec">
-            <p>售<s></s>價 :
-                <img src="../public/images/ntd.png" alt="">
-                <span class="price">656-1120</span>
-            </p>
-            <p>商品规格 :<span class="spec">2粒每日</span></p>
-            <p>商品編碼 :<span class="code">25025202</span></p>
-        </div>
-        <div class="detail_spec">
-            请选择商品 :
-            <ul>
-                <li class="chance">
-                    合世-血压计
-                </li>
-                <li class="chance">
-                    欧姆龙电子血压计
-                </li>
-                <li class="chance">
-                    深海鱼调和精油
-                </li>
-            </ul>
-        </div>
-        <div class="detail_buy">
-            <span class="mount">購買數量</span>
-            <div class="number">
-                <span class="less">-</span>
-                <input type="text" value="1">
-                <span class="add">+</span>
+    <div class="main">
+        <div class="goods_online">
+            <div class="goods_spec">
+                <p>售<s></s>價 :
+                    <img src="../public/images/ntd.png" alt="">
+                    <span class="price">656-1120</span>
+                </p>
+                <p>商品规格 :<span class="spec">2粒每日</span></p>
+                <p>商品編碼 :<span class="code">25025202</span></p>
+            </div>
+            <div class="detail_spec">
+                请选择商品 :
+                <ul>
+                    <li class="chance">
+                        合世-血压计
+                    </li>
+                    <li class="chance">
+                        欧姆龙电子血压计
+                    </li>
+                    <li class="chance">
+                        深海鱼调和精油
+                    </li>
+                </ul>
+            </div>
+            <div class="detail_buy">
+                <span class="mount">購買數量</span>
+                <div class="number">
+                    <span class="less">-</span>
+                    <input type="text" value="1">
+                    <span class="add">+</span>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="left">
+                    <span>加入購物車</span>
+                </div>
+                <div class="right">
+                    <span>立即購買</span>
+                </div>
             </div>
         </div>
-        <div class="footer">
-            <div class="left">
-                <span>加入購物車</span>
+        <div class="goods_offline">
+            <div class="goods_spec">
+                <p>售<s></s>價 :
+                    <img src="../public/images/ntd.png" alt="">
+                    <span class="price">656-1120</span>
+                </p>
+                <p>商品规格 :<span class="spec">2粒每日</span></p>
+                <p>商品編碼 :<span class="code">25025202</span></p>
             </div>
-            <div class="right">
-                <span>立即購買</span>
+            <div class="detail_spec">
+                请选择商品 :
+                <ul>
+                    <li class="chance">
+                        合世-血压计
+                    </li>
+                    <li class="chance">
+                        欧姆龙电子血压计
+                    </li>
+                    <li class="chance">
+                        深海鱼调和精油
+                    </li>
+                </ul>
             </div>
-        </div>
-    </div>
-    <div class="goods_offline">
-        <div class="goods_spec">
-            <p>售<s></s>價 :
-                <img src="../public/images/ntd.png" alt="">
-                <span class="price">656-1120</span>
-            </p>
-            <p>商品规格 :<span class="spec">2粒每日</span></p>
-            <p>商品編碼 :<span class="code">25025202</span></p>
-        </div>
-        <div class="detail_spec">
-            请选择商品 :
-            <ul>
-                <li class="chance">
-                    合世-血压计
-                </li>
-                <li class="chance">
-                    欧姆龙电子血压计
-                </li>
-                <li class="chance">
-                    深海鱼调和精油
-                </li>
-            </ul>
-        </div>
-        <div class="detail_buy">
-            依照法令限制,本商品属于线下下单,请与客服联络,或留下您的联系方式
-        </div>
-        <div class="footer">
-            <div class="left">
-                <span>请联络我</span>
+            <div class="detail_buy">
+                依照法令限制,本商品属于线下下单,请与客服联络,或留下您的联系方式
             </div>
-            <div class="right">
-                <span>联络客服</span>
+            <div class="footer">
+                <div class="left">
+                    <span>请联络我</span>
+                </div>
+                <div class="right">
+                    <span>联络客服</span>
+                </div>
             </div>
         </div>
     </div>
@@ -128,7 +145,7 @@
     <button type="submit" value="送出" class="submit">送出</button>
 </div>
 <div class="server">
-    <div class="cancel">
+    <div class="cancel close">
 
     </div>
     <div class="top">
@@ -141,15 +158,13 @@
     </div>
     <div class="under">
         <div class="left">
-            <a href="tel:10086">立即拨打
+            <a href="tel:10086">立即拨打</a>
         </div>
-        <div class="right">
+        <div class="right close">
             取消
         </div>
     </div>
 </div>
-
-
 
 </body>
 <script src="../components/jquery/jquery-1.11.1.js"></script>

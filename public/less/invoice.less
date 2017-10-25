@@ -1,0 +1,101 @@
+
+@import "base.less";
+
+//頭部
+@import "common.less";
+
+.top {
+  background-color: #fff;
+  font-size: 29 / 36rem;
+  padding-left: 29 / 36rem;
+  border-bottom: 1px solid #DCE0E3;
+  li {
+    height: 83 / 36rem;
+    border-top: 1px solid #E6E6E6;
+    line-height: 83 / 36rem;
+    width: 100%;
+    input {
+      font-size: 29 / 36rem;
+      caret-color:#38A8F4;
+    }
+    .yes {
+      display: block;
+      width: 46 / 36rem;
+      height: 46 / 36rem;
+      background: url(../images/sprites.png) no-repeat -155 / 36rem -61 / 36rem;
+      background-size: 877 / 36rem;
+      float: right;
+      margin-top: 19 / 36rem;
+      margin-right: 30 / 36rem;
+    }
+    .no {
+      display: block;
+      width: 46 / 36rem;
+      height: 45 / 36rem;
+      background: url(../images/sprites.png) no-repeat -108 / 36rem -78/ 36rem;
+      background-size: 877 / 36rem;
+      float: right;
+      margin-top: 19 / 36rem;
+      margin-right: 30 / 36rem;
+    }
+  }
+}
+.middle {
+  margin-top: 25 / 36rem;
+  margin-bottom: 47 / 36rem;
+  border-top: 1px solid #DCE0E3;
+  .info_edit {
+    background-color: #fff;
+    font-size: 30 / 36rem;
+    padding-left: 30 / 36rem;
+    border-bottom: 1px solid #DCE0E3;
+    padding-top: 15 / 36rem;
+    span {
+      display: block;
+      color: #37A8F8;
+      margin-bottom: 30 / 36rem;
+    }
+    li {
+      width: 100%;
+      height: 67 / 36rem;
+      border-top: 1px solid #DCE0E3;
+      line-height: 69 / 36rem;
+      &:nth-child(5) {
+        height:206 / 36rem;
+      }
+      &:nth-child(1) {
+        border: none;
+      }
+      &:nth-child(4) {
+        position: relative;
+      }
+        .icon{
+          display: block;
+          position: absolute;
+          top: 20 / 36rem;
+          width: 16 / 36rem;
+          height: 28 / 36rem;
+          background: url(../images/sprites.png) no-repeat -272/36rem -4/36rem;
+          background-size: 877 / 36rem;
+          right: 30 / 36rem;
+        }
+      input,textarea {
+        width: 520 / 36rem;
+        font-size: 30 / 36rem;
+        font-family: "Microsoft YaHei";
+        caret-color:#38A8F4;
+      }
+    }
+  }
+}
+.footer {
+  height: 87 / 36rem;
+  text-align: center;
+  line-height: 87 / 36rem;
+  color: #3AABFB;
+  font-size: 35 / 36rem;
+  width: 100%;
+  background-color: #fff;
+  border-top: 1px solid #DFE0E4;
+  border-bottom: 1px solid #DFE0E4;
+}
